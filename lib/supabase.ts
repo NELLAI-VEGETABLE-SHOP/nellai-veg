@@ -40,7 +40,8 @@ export interface Product {
   unit: string
   category_id: string
   image_url?: string
-  in_stock: boolean
+  is_featured?: boolean
+  is_active?: boolean
   stock_quantity?: number
   nutritional_info?: any
   created_at: string
