@@ -85,6 +85,7 @@ export interface Order {
   user_id: string
   order_number: string
   status: string
+  total_amount: number
   payment_method: string
   payment_status: string
   subtotal: number
