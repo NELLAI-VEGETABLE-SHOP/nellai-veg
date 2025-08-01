@@ -101,7 +101,7 @@ export const createOrder = async (
   }
 }
 
-export const getOrders = async (userId: string): Promise<Order[]> => {
+export const getUserOrders = async (userId: string): Promise<Order[]> => {
   try {
     const { data: orders, error } = await supabase
       .from("orders")
@@ -122,7 +122,7 @@ export const getOrders = async (userId: string): Promise<Order[]> => {
 
     return orders || []
   } catch (error) {
-    console.error("Error in getOrders:", error)
+    console.error("Error in getUserOrders:", error)
     throw error
   }
 }
