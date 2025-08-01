@@ -68,8 +68,8 @@ export const createOrder = async (
       order_id: order.id,
       product_id: item.product_id,
       quantity: item.quantity,
-      price: item.products?.price || 0,
-      total: (item.products?.price || 0) * item.quantity,
+      unit_price: item.products?.price || 0,
+      total_price: (item.products?.price || 0) * item.quantity,
     }))
 
     console.log("Creating order items:", orderItems)
