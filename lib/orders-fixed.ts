@@ -32,6 +32,7 @@ export const createOrder = async (
       user_id: userId,
       order_number: orderNumber,
       status: "confirmed",
+      total_amount: total,
       payment_method: paymentMethod,
       payment_status: paymentStatus,
       subtotal,
