@@ -66,7 +66,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
                 <img
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/nellai.jpg?height=400&width=400"
                   alt="Fresh vegetables basket"
                   className="w-full h-80 object-cover rounded-lg"
                 />
