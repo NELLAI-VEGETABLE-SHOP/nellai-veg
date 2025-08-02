@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     // Return order with key_id for client-side usage
     return NextResponse.json({
       ...order,
-      key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "rzp_live_5SW7TjdeeGzqoU",
+      key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID ,
     })
   } catch (error) {
     console.error("Error creating Razorpay order:", error)
